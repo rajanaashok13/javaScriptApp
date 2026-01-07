@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script type="module">
+      import { snames, student } from "./module3.js";
+      let stu = snames[1];
+      let roolnumber = student.rollcall;
+      document.getElementById(
+        "demo"
+      ).innerHTML = ` names is ${stu} and rollcall is ${roolnumber}`;
+    </script>
+    <script src="module3.js"></script>
+  </body>
+</html>
